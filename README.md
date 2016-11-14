@@ -1,3 +1,15 @@
+__Incomplete__
+With the users stories, I am looking to set up three classes; Airport, Plane and Weather_report. Having each class with their required methods. Start off small showing the first test to check each class exist and each has their first method; (initialize, for Plane and Airport). The first user story wants to instruct a plane to land in an airport and then confirm its landed. To do this I would create a land method within the plane class and a planes_in_airport array to contain those landed, this will allow to confirm by print the lastest value enter into the array aka the plane that had just landed confirming it has. 
+
+The second user story ask me to make planes take off from airports then confirm it is no longer in the airport, this will mean that similarily to the landing method, this will also be created in the plane class, this is due to my belief that it is a attribute of a plane class rather than airport. To confirm we would then either print the value of flying or show the new list of planes_in_airport with the one less or even empty.
+
+Third user story asks us to ensure safety to not allow planes to take off when weathr is stormy. This needs a few implementions of code, one would be the creation of the stormy method where weather produces a random number 1..6 and if the number is 6 then stormy is true. This will give stormy a 1 in 6 chance of happening as it is rare. Along with this creation using this method to check first before activating the take off method from running if stormy is true and therefore raise and error upon this happening.
+
+The next is very similar using the same technique to check before landing if weather is stormy this will be a one line boolean check where if stormy is true there method won't execute else carry on as normally all implicity implied with the one line.
+
+another safety test these will all be under the sub heading context safety for the tests, this will allow me to read what is passing and failing a lot easier, this safety test is referring back to the planes_in_airport array this will now need a dafeault capacity in order to know if its empty, full and hold values of recently landed planes and deleting those that take off. This will be very similar to the stormy code as it will be however within the airport class in a private methods, both are never going to be called on planes or weather therefore its could practice to keep them within and only used by airport. 
+
+
 Airport Challenge
 =================
 
